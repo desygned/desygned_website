@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+@import "./header";
+@import "./hero";
+@import "./footer";
+@import "./coming";
+@import "./abitur";
+
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.landingPage {
+    height: 100vh;
+    width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration:underline;
+}

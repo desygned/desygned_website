@@ -1,0 +1,21 @@
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    padding: 0px 40px 0px 40px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width: 720px) {
+    .footerContainer {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+ }
+ 

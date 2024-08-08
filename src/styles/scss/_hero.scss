@@ -1,0 +1,38 @@
+.heroContainer {
+    //background: coral;
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.heroImage {
+    img {
+        width: 100px
+    }
+}
+
+.heroText {
+    margin-left: 20px;
+    p {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 896px) {
+    .heroContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .heroText {
+        margin-left: 0px;
+
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
