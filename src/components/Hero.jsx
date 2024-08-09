@@ -28,6 +28,7 @@ const Hero = () => {
     const uiuxPage = () => {
         navigate("uiux")
     }
+
     // for simple landingpage -> maybe flexbox? 
     //                     <img src={portrait} alt="portrait"/>
 
