@@ -1,38 +1,101 @@
 .heroContainer {
     //background: coral;
-    width: 55%;
+    max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    height: 80vh;
+     display: grid;
+    //gap: 3px;
+    padding: 3rem;
+    
 }
 
-.heroImage {
-    img {
-        width: 100px
-    }
-}
 
-.heroText {
-    margin-left: 20px;
+@media (min-width: 600px) {
+    .heroContainer { grid-template-columns: repeat(2, 1fr); }
+  }
+
+// without works too and well
+  @media (min-width: 900px) {
+    .heroContainer { grid-template-columns: repeat(3, 1fr); }
+  }
+
+// 10 rem when removing line above
+.Item {
+    background-color: rgb(255, 255, 255);
+    height: 14rem;
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    color: white;
+    font-family: Helvetica;
+    font-style: italic;
+    cursor: pointer;
+
+
+
     p {
-        font-size: 1.8rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 15px 15px 15px 20px;
         font-weight: bold;
+        font-size: 25px;
+        opacity: 0%;
+        transition: all .5s ease;
+
     }
 }
 
-@media (max-width: 896px) {
-    .heroContainer {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+
+#imageOne {
+    background-image: url("../../static/youareloved1_1\ 2_1-2.gif");
+    background-position: center;
+}
+
+#imageTwo {
+    background-image: url(../../static/mock1.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#imageThree {
+    background-image: url(../../static/yusufkc.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#imageFour {
+    background-image: url('../../static/branding.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#imageFive {
+    background-image: url('../../static/Mockup.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#imageSix {
+    background-image: url('../../static/thumbnail.png');
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.black {
+    z-index: 3;
+    height: 14rem;
+    transition: all .5s ease;
+
+
+    &:hover {
+        background-color: black;
+        opacity: 85%;
     }
 
-    .heroText {
-        margin-left: 0px;
-
-        p{
-            font-size: 1.2rem;
-        }
-    }
+    &:hover > p {opacity: 100%; } 
 }

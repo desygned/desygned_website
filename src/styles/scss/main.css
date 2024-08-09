@@ -96,49 +96,105 @@
 }
 
 .heroContainer {
-  width: 55%;
+  max-width: 1200px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  padding: 3rem;
 }
 
-.heroImage img {
-  width: 100px;
-}
-
-.heroText {
-  margin-left: 20px;
-}
-
-.heroText p {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-@media (max-width: 896px) {
+@media (min-width: 600px) {
   .heroContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
-  .heroText {
-    margin-left: 0px;
+}
+
+@media (min-width: 900px) {
+  .heroContainer {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
-  .heroText p {
-    font-size: 1.2rem;
-  }
+}
+
+.Item {
+  background-color: white;
+  height: 14rem;
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  color: white;
+  font-family: Helvetica;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.Item p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 15px 15px 15px 20px;
+  font-weight: bold;
+  font-size: 25px;
+  opacity: 0%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#imageOne {
+  background-image: url("../../static/youareloved1_1 2_1-2.gif");
+  background-position: center;
+}
+
+#imageTwo {
+  background-image: url(../../static/mock1.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#imageThree {
+  background-image: url(../../static/yusufkc.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#imageFour {
+  background-image: url("../../static/branding.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#imageFive {
+  background-image: url("../../static/Mockup.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#imageSix {
+  background-image: url("../../static/thumbnail.png");
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.black {
+  z-index: 3;
+  height: 14rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.black:hover {
+  background-color: black;
+  opacity: 85%;
+}
+
+.black:hover > p {
+  opacity: 100%;
 }
 
 footer {

@@ -2,7 +2,6 @@ import React from 'react';
 
 
 const Abitur = () => {
-//                      <img src={MathematikAbitur} alt="book cover" className="bookCover"/> 
 // <img src={PhysikAbitur} alt="book cover" className="bookCover"/>
 //                     <img src={GeographieAbitur} alt="book cover" className="bookCover"/>
 

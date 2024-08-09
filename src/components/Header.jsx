@@ -19,7 +19,7 @@ const Header = () => {
                     <a href="/"><img src={DesygnedLogo} alt="DesygnedLogo" className="bookCover"/></a>
                 </div>
                 <div className="menuContainer" onClick={ () => menudisplay() }>
-                    <p>menu</p>
+                    <p>menü</p>
                 </div>
             </div>
 
