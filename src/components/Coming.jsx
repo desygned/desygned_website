@@ -3,11 +3,14 @@ import Footer from './Footer';
 
 const Coming = () => {
     return (
+        <>
         <div className="ComingSoonWrapper">
             <p>Coming Soon!</p>
             <a href="/">Return Home</a>
-            <Footer />
-        </div>  
+        </div>
+        <Footer/>
+        </>
+
         
     )
 }

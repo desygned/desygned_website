@@ -24,11 +24,13 @@ const Header = () => {
             </div>
 
             <div className={menu ? "navlinks_open" : "navlinks"}>
-                <a href="/publications">publications</a>
-                <a href="/projects">projects</a>
+                <a href="/fotoundvideo">foto & video</a>
+                <a href="/fashion">fashion</a>
+                <a href="/brand">brand</a>
+                <a href="/posterundpackaging">poster & packaging</a>
+                <a href="/uiux">ui & ux</a>
                 <a href="/about">about</a>
-                <a href="/contact">contact</a>
-                <a href="/abitur">abitur</a>
+                <a href="/kontakt">kontakt</a>
             </div>
         </nav>
     )

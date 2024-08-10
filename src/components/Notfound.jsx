@@ -6,7 +6,6 @@ const Coming = () => {
         <div className="ComingSoonWrapper">
             <p>PAGENOTFOUND</p>
             <a href="/">Return Home</a>
-            <Footer />
         </div>  
     )
 }
