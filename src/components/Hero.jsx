@@ -26,7 +26,7 @@ const Hero = () => {
     }
 
     const uiuxPage = () => {
-        navigate("uiux")
+        navigate("/uiux")
     }
 
     // for simple landingpage -> maybe flexbox? 

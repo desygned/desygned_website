@@ -7,6 +7,9 @@ const FotoVideo = () => {
         <div className="serviceWrapper"></div> 
         <div className="textWrapper">
             <p className="textHeader">(bewegte) bilder</p> 
+            <p>Wir bewegen Bilder und Bilder bewegen uns. Vom <span>Imagefilm</span> über Dokumentarfilme bis zu Vlogs.
+                Wir übernehmen die gesamte Film- und Fotoproduktion
+            </p>
             <ul>
                   <li>imagefilme</li>
                   <li>dokumentarfilme</li>
